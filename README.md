@@ -8,6 +8,7 @@ A Claude Code plugin with some standard development tools to be leveraged during
 
 - **`/test-sweet-plugin:summarize-changes`** (command) — lists each file touched on the current branch with a one-line description of the change, sized to paste straight into a pull-request description.
 - **`/test-sweet-plugin:format`** (command) - Formats the current file based on standard formating rules
+- **`/test-sweet-plugin:review`** (command) - Command to execute the code-reviewer and documentation-specialist agents in parallel.
 
 #### Agents
 
@@ -34,6 +35,7 @@ Then:
 
 - Run `/test-sweet-plugin:summarize-changes` to get a PR-ready summary of your branch.
 - Ask Claude to review your recent changes — it will reach for the `code-reviewer` agent automatically.
+- Run `/test-sweet-plugin:review` to run the `code-reviewer` and `documentation-specialist` agents in parallel and get combined findings plus documentation updates in one pass.
 
 After editing plugin files, run `/reload-plugins` to pick up the changes without restarting.
 
@@ -46,6 +48,7 @@ After editing plugin files, run `/reload-plugins` to pick up the changes without
 ├── commands/
 │   └── summarize-changes.md
 |   └── format.md
+|   └── review.md
 ├── agents/
 │   └── code-reviewer.md
 │   └── documentation-specialist.md
