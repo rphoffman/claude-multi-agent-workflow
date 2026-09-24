@@ -1,6 +1,7 @@
 node_modules/
 .DS_Store
 *.log
-
+NOTINUSE.MD
 # Personal, machine-local Claude settings (committed plugin files stay tracked)
 .claude/settings.local.json
+
