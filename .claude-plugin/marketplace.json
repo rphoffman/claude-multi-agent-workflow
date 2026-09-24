@@ -1,4 +1,9 @@
 {
-  "name": "test-sweet-plugin",
-  "version": "0.1.0"
+  "name": "test-sweet-plugin-marketplace",
+  "plugins": [
+    {
+      "name": "test-sweet-plugin",
+      "source": "./"
+    }
+  ]
 }
